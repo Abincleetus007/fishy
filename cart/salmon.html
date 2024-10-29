@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Something Fishy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background:white;
+    color: #110909;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #170e0e;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.product-detail {
+    padding: 50px 0;
+}
+
+.product-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+}
+
+.product-info {
+    max-width: 500px;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #e64a19;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #e64a19;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Something Fishy</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../product.html">Products</a></li>
+                    <li><a href="../login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-content">
+                <div class="product-image">
+                    <img src="../image/Fresh Salmon Fillets.jpg" alt="Fresh Salmon Fillets">
+                </div>
+                <div class="product-info">
+                    <h2>Fresh Salmon Fillets</h2>
+                    <p class="price">Price: ₹699 per kg</p>
+                    <p>Our fresh salmon fillets are caught from pristine waters and carefully prepared for your table. Perfect for grilling, baking, or pan-frying, these fillets offer a rich and delicious flavor.</p>
+                    <ul>
+                        <li>100% fresh and natural</li>
+                        <li>Rich in Omega-3 fatty acids</li>
+                        <li>No added preservatives</li>
+                        <li>Boneless and skinless</li>
+                    </ul>
+
+                    <label for="quantity">Select Quantity (in kg):</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                    
+                    <div class="btn-group">
+                        <a href="../checkout.html" class="btn">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Something Fishy. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
